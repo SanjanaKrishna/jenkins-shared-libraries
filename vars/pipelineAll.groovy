@@ -32,7 +32,9 @@ def uploadArtifact(String artifactPath) {
 
 def runApplication() {
     echo 'Running application...'
-    sh 'java -jar target/petclinic-0.0.1-SNAPSHOT.jar'
+    sh 'nohup mvn spring-boot:run &'
+    sleep(time: 15, unit: 'SECONDS')
+   // sh 'java -jar target/petclinic-0.0.1-SNAPSHOT.jar' 
 }
 
 def validateApp() {
