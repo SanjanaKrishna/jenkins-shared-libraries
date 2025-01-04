@@ -32,7 +32,7 @@ def uploadArtifact(String artifactPath) {
 
 def runApplication() {
     echo 'Running application...'
-    sh 'java -jar target/bus-booking-app-1.0-SNAPSHOT.jar'
+    sh 'java -jar target/petclinic-0.0.1-SNAPSHOT.jar'
 }
 
 def validateApp() {
